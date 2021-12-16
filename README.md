@@ -1,7 +1,7 @@
-# femadex design
+# fmdx local cmd
 
-femadex design file.
-'gulp serve'
+fmdx design file.
+`gulp serve`
 
 # production cmd
 
