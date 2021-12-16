@@ -1,4 +1,4 @@
-# fmdx local cmd
+# local cmd
 
 fmdx design file.
 
