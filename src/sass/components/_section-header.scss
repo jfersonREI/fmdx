@@ -1,0 +1,14 @@
+.section-header {
+  display: block;
+  @extend .margin-bottom-3;
+  &__title {
+    color: color("ink");
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    color: color("base");
+    font-weight: font-weight("normal");
+    line-height: line-height("heading", 3);
+    font-size: size("body", 5);
+  }
+}

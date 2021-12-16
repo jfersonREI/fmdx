@@ -1,0 +1,76 @@
+body,
+html {
+  font-family: $font-family-base;
+}
+
+.fd-stacked-card {
+  font-family: $font-family-base;
+  border: color("base-lighter") 1px solid;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 0.25rem;
+  max-width: 30rem;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__header {
+    padding: 1rem 1.25rem;
+  }
+  &__media {
+    background-color: color("base-lighter");
+    overflow: hidden;
+    position: relative;
+  }
+  &__headline {
+    padding: 1rem 1.25rem;
+  }
+  &__title {
+    display: block;
+    font-weight: font-weight("bold");
+    line-height: line-height("heading", 3);
+    font-size: size("body", 5);
+  }
+  &__subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: size("body", 1);
+    text-transform: uppercase;
+    line-height: line-height("heading", 3);
+    @extend .padding-top-1;
+  }
+  &__supporting-text {
+    padding: 0.5rem 1.25rem;
+    font-size: size("body", 4);
+    line-height: line-height("body", $theme-body-line-height);
+  }
+  &__actions {
+    padding: 1rem 1.25rem 1.25rem 1.25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__action-btn-group {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__item {
+      margin: 0 0.25rem;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

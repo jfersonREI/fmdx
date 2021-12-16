@@ -1,13 +1,13 @@
 {
   "name": "femadex",
   "version": "1.0.0",
-  "description": "femadex",
-  "author": "femadex",
+  "description": "fmdx",
+  "author": "fmdx",
   "license": "MIT",
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jfersonREI/fmdx.git"
   },
   "scripts": {
     "start": "gulp",

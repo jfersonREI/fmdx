@@ -1,0 +1,134 @@
+// ---------------------------------------------------------------------------
+// Owl carousel
+
+.owl-theme {
+  // Styling Next and Prev buttons
+  .owl-nav {
+    margin-top: 0;
+    text-align: right;
+    -webkit-tap-highlight-color: transparent;
+    //background: orange;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 0;
+    width: 100%;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    [class*="owl-"] {
+      color: rgba(0, 0, 0, 1);
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+
+      display: block;
+      cursor: pointer;
+      width: 18px;
+      height: 40px;
+      opacity: 1;
+      border-radius: 0;
+      &:hover {
+        color: #fff;
+        background: color("primary");
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+    .disabled {
+      opacity: 0;
+      cursor: default;
+      &:hover {
+        opacity: 0;
+      }
+    }
+    .owl-next,
+    .owl-prev {
+      background-color: color("base-lighter") !important;
+
+      > span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+      }
+    }
+
+    .owl-next {
+      font-size: 12px;
+
+      position: absolute;
+      top: 0;
+      right: -20px;
+
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+
+      > span {
+        background-image: url(../img/navigate-next.svg);
+      }
+    }
+    .owl-prev {
+      font-size: 12px;
+
+      position: absolute;
+      top: 0;
+      left: -20px;
+
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+      > span {
+        background-image: url(../img/navigate-before.svg);
+      }
+    }
+  }
+
+  // Styling dots
+  .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+  }
+  .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    padding-top: 1rem;
+    height: 40px;
+    overflow: hidden;
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      span {
+        width: 8px;
+        height: 8px;
+        margin: 5px;
+        background: color("base-lighter");
+        display: block;
+        border-radius: 30px;
+        backface-visibility: visible;
+        transition: opacity 200ms ease;
+      }
+
+      &.active,
+      &:hover {
+        span {
+          background: color("base");
+        }
+      }
+    }
+  }
+}
