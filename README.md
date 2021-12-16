@@ -1,6 +1,7 @@
 # fmdx local cmd
 
 fmdx design file.
+
 `gulp serve`
 
 # production cmd
